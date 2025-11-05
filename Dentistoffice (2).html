@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dentist Office</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    /* Sticky Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(90deg, #00b4d8, #0096c7);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6f61; /* coral accent */
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0096c7;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-left: 6px solid #ff6f61;
+      padding-left: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    /* Staff Styling */
+    .staff-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .staff-member {
+      flex: 1 1 220px;
+      text-align: center;
+      background: #f0fbff;
+      border-radius: 16px;
+      padding: 20px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .staff-member:hover {
+      transform: translateY(-5px);
+      background: #e6faff;
+    }
+
+    .staff-member img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%; /* Circular styling */
+      border: 4px solid #00b4d8;
+      margin-bottom: 12px;
+    }
+
+    .staff-member h3 {
+      margin: 10px 0 5px;
+      color: #023e8a;
+    }
+
+    .staff-member p {
+      color: #666;
+    }
+
+    /* Patient Forms */
+    .forms ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .forms li {
+      margin: 12px 0;
+    }
+
+    .forms a {
+      color: #00b4d8;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .forms a:hover {
+      color: #ff6f61;
+      border-bottom: 2px solid #ff6f61;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#staff">Meet the Staff</a>
+    <a href="#forms">Patient Forms</a>
+  </nav>
+
+  <!-- Services Page -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We provide a wide range of dental services to keep your smile healthy and bright, including:</p>
+    <ul>
+      <li>✨ General Checkups</li>
+      <li>🦷 Teeth Cleaning & Whitening</li>
+      <li>💎 Fillings & Crowns</li>
+      <li>🌟 Root Canals</li>
+      <li>😁 Orthodontics & Braces</li>
+    </ul>
+  </section>
+
+  <!-- Meet the Staff Page -->
+<section id="staff">
+  <h2>Meet the Staff</h2>
+  <div class="staff-container">
+    <div class="staff-member">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=faces&fit=crop&w=400&h=400" alt="Dr. Smith">
+      <h3>Dr. John Smith</h3>
+      <p>Lead Dentist</p>
+    </div>
+    <div class="staff-member">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?crop=faces&fit=crop&w=400&h=400" alt="Dr. Johnson">
+      <h3>Dr. Sarah Johnson</h3>
+      <p>Orthodontist</p>
+    </div>
+    <div class="staff-member">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=faces&fit=crop&w=400&h=400" alt="Hygienist">
+      <h3>Emily Brown</h3>
+      <p>Dental Hygienist</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Patient Forms Page -->
+<section id="forms" class="forms">
+  <h2>Patient Forms</h2>
+  <p>Please download and complete the following forms before your visit:</p>
+
+  <!-- New Patient Form -->
+  <ul>
+    <li><a href="forms/new-patient.pdf" target="_blank">📝 New Patient Form (PDF)</a></li>
+  </ul>
+
+  <!-- Health Certificates -->
+  <h3>Health Certificates</h3>
+  <ul>
+    <li><a href="forms/health-certificate-john.pdf" target="_blank">📑 Health Certificate – John Doe (PDF)</a></li>
+    <li><a href="forms/health-certificate-sarah.pdf" target="_blank">📑 Health Certificate – Sarah Johnson (PDF)</a></li>
+    <li><a href="forms/health-certificate-emily.pdf" target="_blank">📑 Health Certificate – Emily Brown (PDF)</a></li>
+  </ul>
+
+  <!-- Medical History Forms -->
+  <h3>Medical History Forms</h3>
+  <div class="staff-container">
+    <div class="staff-member">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=faces&fit=crop&w=400&h=400" alt="John Doe">
+      <h4>John Doe</h4>
+      <a href="forms/medical-history-john.pdf" target="_blank">📋 Medical History (PDF)</a>
+    </div>
+    <div class="staff-member">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?crop=faces&fit=crop&w=400&h=400" alt="Sarah Johnson">
+      <h4>Sarah Johnson</h4>
+      <a href="forms/medical-history-sarah.pdf" target="_blank">📋 Medical History (PDF)</a>
+    </div>
+    <div class="staff-member">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=faces&fit=crop&w=400&h=400" alt="Emily Brown">
+      <h4>Emily Brown</h4>
+      <a href="forms/medical-history-emily.pdf" target="_blank">📋 Medical History (PDF)</a>
+    </div>
+  </div>
+
+  <!-- Privacy Policy -->
+  <h3>Privacy Policy</h3>
+  <p>
+    1. We value your privacy and are committed to safeguarding your personal information. 
+    2. This policy explains how we collect, use, and protect patient data. 
+    3. All medical and personal details shared with our clinic remain confidential. 
+    4. We only collect information necessary for providing dental care. 
+    5. Information may include medical history, contact details, and payment information. 
+    6. We do not sell or trade your data with third parties. 
+    7. Your records are stored securely with encryption and password protection. 
+    8. Access to your data is restricted to authorized staff members only. 
+    9. We may use anonymized data for internal research and quality improvements. 
+    10. Patient consent is always required before sharing information with specialists. 
+    11. Electronic communication of your data is protected through secure systems. 
+    12. Physical documents are stored in locked and monitored areas. 
+    13. You have the right to request a copy of your medical records. 
+    14. You may request corrections to any inaccurate personal details. 
+    15. We comply with all applicable health privacy regulations and laws. 
+    16. Emergency disclosures are permitted only when legally required. 
+    17. We may update this privacy policy from time to time. 
+    18. Updated versions will be posted on our website promptly. 
+    19. Our staff undergoes regular training on data protection practices. 
+    20. Security audits are conducted to ensure compliance. 
+    21. We may use your contact information for appointment reminders. 
+    22. Marketing communication will only be sent with your consent. 
+    23. You can opt out of promotional messages at any time. 
+    24. Cookies may be used on our website to enhance user experience. 
+    25. Third-party services integrated into our site follow their own privacy rules. 
+    26. We are not responsible for external links you may access from our site. 
+    27. Minors’ data is collected only with parental or guardian consent. 
+    28. Patients are encouraged to raise concerns regarding data handling. 
+    29. Complaints will be addressed promptly and transparently. 
+    30. By visiting our clinic or using our services, you agree to this privacy policy. 
+  </p>
+</section>
